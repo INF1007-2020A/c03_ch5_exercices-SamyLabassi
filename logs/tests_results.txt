@@ -1,6 +1,6 @@
-test_factorial (__main__.TestExercice) ... FAIL
+test_factorial (__main__.TestExercice) ... ok
 test_prefixes (__main__.TestExercice) ... ERROR
-test_summation (__main__.TestExercice) ... FAIL
+test_summation (__main__.TestExercice) ... ok
 
 ======================================================================
 ERROR: test_prefixes (__main__.TestExercice)
@@ -12,30 +12,7 @@ Traceback (most recent call last):
     resultat = resultat.append(nom)
 AttributeError: 'NoneType' object has no attribute 'append'
 
-======================================================================
-FAIL: test_factorial (__main__.TestExercice)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 50, in test_factorial
-    'Erreur dans le remplacement de caractère'
-AssertionError: Lists differ: [0, 0, 0, 0] != [1, 6, 40320, 3628800]
+Ran 3 tests in 0.003s
 
-First differing element 0:
-0
-1
-
-- [0, 0, 0, 0]
-+ [1, 6, 40320, 3628800] : Erreur dans le remplacement de caractère
-
-======================================================================
-FAIL: test_summation (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 38, in test_summation
-    'Retrait du mauvais caractère'
-AssertionError: 0 != 24133 : Retrait du mauvais caractère
-
-----------------------------------------------------------------------
-Ran 3 tests in 0.001s
-
-FAILED (failures=2, errors=1)
+FAILED (errors=1)
